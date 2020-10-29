@@ -1,13 +1,7 @@
 import React from 'react'
 
-function Answer(props) {
-    return (
-        <div>
-            <button className="btnAnswer" type="button" onClick={() => {
-                props.handleClick(props.choice)
-            }}>{props.answer}</button>
-        </div>
-    )
+function Question(props) {
+    return (<h1 className="question">{props.dataSet.question}</h1>)
 }
 
-export default Answer;
+export default Question;
